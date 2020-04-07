@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">CalPro</string>
+
+
+    <!-- Log in Activity -->
+    <string name="logInBtn">Log in</string>
+    <string name="resetPasswordBtn">Reset password</string>
+    <string name="newAccountBtn">New account</string>
+    <string name="logInTitle">Welcome</string>
+    <string name="emailEditTextHint">Email</string>
+    <string name="passwordEditTextHint">Password</string>
+
+    <!-- Register User Activity -->
+    <string name="registerUserTitle">New account</string>
+    <string name="registerEmailEditTextHint">Email</string>
+    <string name="registerPasswordEditTextHint">Password</string>
+    <string name="confirmRegisterPasswordEditTextHint">Confirm password</string>
+    <string name="registerAccountBtnText">Register account</string>
+
+    <!-- Log out Fragment -->
+    <string name="logoutTitle">Log out</string>
+    <string name="logoutBtnText">Log out</string>
+    <!-- Dashboard Fragment -->
+    <string name="dashboardTitle">Dashboard</string>
+    <!-- Dashboard Meal Plan Status Fragment -->
+    <string name="mealPlanStatusTitle">Meal plan status</string>
+    <string name="mealPlanCaloriesTextView">Calories: </string>
+    <string name="mealPlanCarbsTextView">Carbs: </string>
+    <string name="mealPlanProteinTextView">Protein: </string>
+    <string name="mealPlanFatTextView">Fat: </string>
+    <string name="mealPlanPriceTextView">Cost: </string>
+    <string name="missingCaloriesTextView"> out of: </string>
+    <string name="missingCarbsTextView"> out of: </string>
+    <string name="missingProteinTextView"> out of: </string>
+    <string name="missingFatTextView"> out of: </string>
+    <!-- Dashboard Change Macros Fragment -->
+    <string name="intakeLevelSeekBarTextView">Intake level</string>
+    <string name="carbsSeekBarTextView">Carbs %</string>
+    <string name="proteinSeekBarTextView">Protein %</string>
+    <string name="fatSeekBarTextView">Fat %</string>
+    <string name="bodyWeightTextView">Base intake level on weight: </string>
+    <string name="bodyWeightEditTextHint">kilos</string>
+    <!-- Dashboard Active Meals Recycler Fragment -->
+    <string name="activeMealsRecyclerTitleTextView">Active meals</string>
+    <!-- Dashboard Stored Meals Recycler Fragment -->
+    <string name="storedMealsRecyclerTitleTextView">Stored meals</string>
+
+    <!-- Progress Fragment -->
+    <string name="progressTitle">Weight progress</string>
+    <string name="newEntryTitle">New entry</string>
+    <string name="newWeightEntryTextView">Enter weight</string>
+    <!-- Kitchen Fragment -->
+    <string name="kitchenTitle">Kitchen</string>
+    <string name="storedMealsButton">Meals</string>
+    <string name="storedIngredientsButton">Ingredients</string>
+    <string name="newMealButton">New meal</string>
+    <string name="newIngredientButton">New Ingredient</string>
+    <!-- Kitchen Stored Ingredients Recycler Fragment -->
+    <string name="ingredientRecyclerTitleTextView">Stored ingredients</string>
+
+    <!-- Kitchen Stored Meals Recycler Fragment -->
+    <string name="editStoredMealsText">Edit</string>
+    <!-- Kitchen Edit Stored Meals Recycler Fragment -->
+    <string name="returnButtonTextView">Return</string>
+    <string name="removeMealButtonTextView">Delete</string>
+    <string name="editMealButtonTextView">Save</string>
+    <!-- Kitchen Create Meal Fragment -->
+    <string name="amountTextView">Amount</string>
+    <string name="addIngredientButton">Add</string>
+    <string name="viewMealButtonTextView">View meal</string>
+    <string name="mealNewNameTextView">Meal name: </string>
+    <string name="confirmMealNameButtonTextView">Create meal</string>
+    <string name="storeMealButtonTextView">Store meal</string>
+
+    <!-- Kitchen Create Ingredient -->
+    <string name="newIngredientNameTextView">Ingredient name: </string>
+    <string name="confirmIngredientNameButtonTextView">Confirm</string>
+    <string name="IngredientRadioButtonGroupTextView">Macro ratio</string>
+    <string name="IngredientCarbsHint">Carbs</string>
+    <string name="IngredientProteinHint">Protein</string>
+    <string name="IngredientFatHint">Fat</string>
+    <string name="IngredientPriceHint">Price</string>
+    <string name="IngredientNameHint">Name</string>
+    <string name="IngredientMacrosInputTextView">Ingredient macros</string>
+    <string name="CreateIngredientButtonTextView">Store</string>
+    <string name="Ingredient100GramRatio">100g</string>
+    <string name="Ingredient10GramRatio">10g</string>
+
+    <!-- Account Settings Fragment -->
+    <string name="accountSettingsTitle">Account Settings</string>
+    <string name="test">Log out</string>
+    <string name="recyclerCaloriesTextView">kcal</string>
+
+    <!-- Ingredient Recycler Item View -->
+    <string name="ingredientNameTextView"></string>
+    <string name="ingredientPriceTextView">Price:</string>
+    <string name="ingredientCarbsTextView">Carbs:</string>
+    <string name="ingredientProteinTextView">Protein:</string>
+    <string name="ingredientFatTextView">Fat:</string>
+    <string name="ingredientCaloriesTextView">Kcal:</string>
+    <string name="editIngredientTextView">Edit</string>
+
+    <!-- Active Meals Recycler Item View -->
+    <string name="activeMealNameTextView"></string>
+    <string name="activeMealChangeIngredientsTextView">Edit \n Ingredients</string>
+    <string name="activeMealRemoveMealTextView">Remove</string>
+    <string name="activeMealPriceTextView">Price:</string>
+    <string name="activeMealCarbsTextView">Carbs:</string>
+    <string name="activeMealsProteinTextView">Protein:</string>
+    <string name="activeMealsFatTextView">Fat:</string>
+    <string name="activeMealsCaloriesTextView">Kcal:</string>
+    <string name="activeMealsDecorationLabelRemove">Remove</string>
+
+    <!-- Stored Meals Recycler Item View -->
+    <string name="storedMealsDecorationLabelActivate">Activate</string>
+
+
+</resources>

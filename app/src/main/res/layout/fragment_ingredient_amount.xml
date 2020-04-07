@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="392dp" />
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/ingredientAmountSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:bsb_bubble_color="@color/mainBlue"
+        app:bsb_bubble_text_color="@color/mainYellow"
+        app:bsb_second_track_color="@color/mainYellow"
+        app:bsb_section_text_color="@color/common_google_signin_btn_text_dark_focused"
+        app:bsb_show_section_mark="true"
+        app:bsb_show_section_text="true"
+        app:bsb_show_thumb_text="true"
+        app:bsb_thumb_color="@color/mainYellow"
+        app:bsb_thumb_text_color="@color/common_google_signin_btn_text_dark_focused"
+        app:bsb_track_color="@color/mainBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientNameTextView" />
+
+    <TextView
+        android:id="@+id/ingredientNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+    <TextView
+        android:id="@+id/ingredientCarbsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/ingredientCarbsTextView"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/ingredientPriceCounterTextView"
+        app:layout_constraintTop_toTopOf="@+id/ingredientPriceTextView" />
+
+    <TextView
+        android:id="@+id/ingredientCaloriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/ingredientCaloriesTextView"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/ingredientFatCounterTextView"
+        app:layout_constraintTop_toTopOf="@+id/ingredientFatTextView" />
+
+    <TextView
+        android:id="@+id/ingredientCaloriesCounterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/ingredientCaloriesTextView"
+        app:layout_constraintTop_toTopOf="@+id/ingredientCaloriesTextView" />
+
+    <TextView
+        android:id="@+id/ingredientCarbsCounterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/ingredientCarbsTextView"
+        app:layout_constraintTop_toTopOf="@+id/ingredientCarbsTextView" />
+
+    <TextView
+        android:id="@+id/ingredientProteinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/ingredientProteinTextView"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/ingredientCarbsCounterTextView"
+        app:layout_constraintTop_toTopOf="@+id/ingredientCarbsTextView" />
+
+    <TextView
+        android:id="@+id/ingredientProteinCounterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/ingredientProteinTextView"
+        app:layout_constraintTop_toTopOf="@+id/ingredientProteinTextView" />
+
+    <TextView
+        android:id="@+id/ingredientFatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/ingredientFatTextView"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/ingredientProteinCounterTextView"
+        app:layout_constraintTop_toTopOf="@+id/ingredientProteinTextView" />
+
+    <TextView
+        android:id="@+id/ingredientFatCounterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/ingredientFatTextView"
+        app:layout_constraintTop_toTopOf="@+id/ingredientFatTextView" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addIngredientButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:clickable="true"
+        app:backgroundTint="@color/mainBlue"
+        app:layout_constraintEnd_toStartOf="@+id/storeMealButton"
+        app:layout_constraintTop_toTopOf="@+id/storeMealButton"
+        app:maxImageSize="56dp"
+        app:srcCompat="@drawable/ingredients_add" />
+
+    <TextView
+        android:id="@+id/addIngredientButtonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addIngredientButton"
+        app:layout_constraintEnd_toEndOf="@+id/addIngredientButton"
+        app:layout_constraintStart_toStartOf="@+id/addIngredientButton"
+        app:layout_constraintTop_toBottomOf="@+id/addIngredientButton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="505dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/viewMealButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:clickable="true"
+        app:backgroundTint="@color/mainBlue"
+        app:layout_constraintEnd_toStartOf="@+id/addIngredientButton"
+        app:layout_constraintTop_toTopOf="@+id/addIngredientButton"
+        app:maxImageSize="56dp"
+        app:srcCompat="@drawable/meals" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/viewMealButtonTextView"
+        app:layout_constraintEnd_toEndOf="@+id/viewMealButton"
+        app:layout_constraintStart_toStartOf="@+id/viewMealButton"
+        app:layout_constraintTop_toBottomOf="@+id/viewMealButton" />
+
+    <TextView
+        android:id="@+id/ingredientPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ingredientPriceTextView"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientAmountSeekBar" />
+
+    <TextView
+        android:id="@+id/ingredientPriceCounterTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/ingredientPriceTextView"
+        app:layout_constraintTop_toTopOf="@+id/ingredientPriceTextView" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/storeMealButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:clickable="true"
+        app:backgroundTint="@color/mainBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        app:maxImageSize="56dp"
+        app:srcCompat="@drawable/meals_confirm" />
+
+    <TextView
+        android:id="@+id/saveMealButtonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/storeMealButtonTextView"
+        app:layout_constraintEnd_toEndOf="@+id/storeMealButton"
+        app:layout_constraintStart_toStartOf="@+id/storeMealButton"
+        app:layout_constraintTop_toBottomOf="@+id/storeMealButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

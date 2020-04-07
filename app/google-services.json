@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "299848085321",
+    "firebase_url": "https://first-android-app-2f3db.firebaseio.com",
+    "project_id": "first-android-app-2f3db",
+    "storage_bucket": "first-android-app-2f3db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299848085321:android:505691f830f4fe19",
+        "android_client_info": {
+          "package_name": "com.example.CalPro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299848085321-msa705k55comc0lrvjsg34thqet45irs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.CalPro",
+            "certificate_hash": "cf43dc4a4310344b1b6d9ef9dc193ee59efc6c62"
+          }
+        },
+        {
+          "client_id": "299848085321-uibjh2m32m8qm3t7acf287tjjg8ua3fe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz2OHtdUmzV8eZJPAb-SIaDIgWoqxeJms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299848085321-uibjh2m32m8qm3t7acf287tjjg8ua3fe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

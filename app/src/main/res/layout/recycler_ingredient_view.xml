@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_yellow_border_top">
+
+
+    <TextView
+        android:id="@+id/ingredientNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ingredientNameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ingredientPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ingredientPriceTextView"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientNameTextView" />
+
+    <TextView
+        android:id="@+id/ingredientCarbsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:text="@string/ingredientCarbsTextView"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ingredientPrice" />
+
+    <TextView
+        android:id="@+id/ingredientProteinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:text="@string/ingredientProteinTextView"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ingredientCarbs" />
+
+    <TextView
+        android:id="@+id/ingredientFatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:text="@string/ingredientFatTextView"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ingredientProtein" />
+
+    <TextView
+        android:id="@+id/ingredientCaloriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:text="@string/ingredientCaloriesTextView"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ingredientFat" />
+
+    <TextView
+        android:id="@+id/ingredientPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ingredientPriceTextView" />
+
+    <TextView
+        android:id="@+id/ingredientCarbs"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ingredientCarbsTextView" />
+
+    <TextView
+        android:id="@+id/ingredientProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ingredientProteinTextView" />
+
+    <TextView
+        android:id="@+id/ingredientFat"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ingredientFatTextView" />
+
+    <TextView
+        android:id="@+id/ingredientCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ingredientCaloriesTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

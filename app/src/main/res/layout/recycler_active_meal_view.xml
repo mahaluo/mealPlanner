@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/activeMealsRecyclerView"
+    android:onClick="message"
+    android:background="@drawable/white_yellow_border_top">
+
+       <TextView
+           android:id="@+id/activeMealsNameTextView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginStart="8dp"
+           android:layout_marginLeft="8dp"
+           android:layout_marginTop="8dp"
+           android:text="meal name"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <TextView
+           android:id="@+id/activeMealsCaloriesTextView"
+           android:layout_width="wrap_content"
+           android:layout_height="20dp"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginStart="36dp"
+           android:layout_marginLeft="36dp"
+           android:text="@string/activeMealsCaloriesTextView"
+           android:textSize="10sp"
+           app:layout_constraintBottom_toBottomOf="@+id/activeMealsFatTextView"
+           app:layout_constraintStart_toStartOf="@+id/activeMealsFat"
+           app:layout_constraintTop_toTopOf="@+id/activeMealsFatTextView" />
+
+
+       <TextView
+           android:id="@+id/activeMealsPriceTextView"
+           android:layout_width="wrap_content"
+           android:layout_height="20dp"
+           android:layout_marginStart="8dp"
+           android:layout_marginLeft="8dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginBottom="8dp"
+           android:text="@string/activeMealPriceTextView"
+           android:textSize="10sp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toStartOf="@+id/activeMealsNameTextView"
+           app:layout_constraintTop_toBottomOf="@+id/activeMealsNameTextView" />
+
+       <TextView
+           android:id="@+id/activeMealsCarbsTextView"
+           android:layout_width="wrap_content"
+           android:layout_height="20dp"
+           android:layout_marginStart="36dp"
+           android:layout_marginLeft="36dp"
+           android:text="@string/activeMealCarbsTextView"
+           android:textSize="10sp"
+           app:layout_constraintBottom_toBottomOf="@+id/activeMealsPriceTextView"
+           app:layout_constraintStart_toStartOf="@+id/activeMealsPrice"
+           app:layout_constraintTop_toTopOf="@+id/activeMealsPriceTextView" />
+
+       <TextView
+           android:id="@+id/activeMealsProteinTextView"
+           android:layout_width="wrap_content"
+           android:layout_height="20dp"
+           android:layout_marginStart="36dp"
+           android:layout_marginLeft="36dp"
+           android:text="@string/activeMealsProteinTextView"
+           android:textSize="10sp"
+           app:layout_constraintBottom_toBottomOf="@+id/activeMealsCarbsTextView"
+           app:layout_constraintStart_toStartOf="@+id/activeMealsCarbs"
+           app:layout_constraintTop_toTopOf="@+id/activeMealsCarbsTextView" />
+
+       <TextView
+           android:id="@+id/activeMealsFatTextView"
+           android:layout_width="wrap_content"
+           android:layout_height="20dp"
+           android:layout_marginStart="36dp"
+           android:layout_marginLeft="36dp"
+           android:text="@string/activeMealsFatTextView"
+           android:textSize="10sp"
+           app:layout_constraintBottom_toBottomOf="@+id/activeMealsProteinTextView"
+           app:layout_constraintStart_toStartOf="@+id/activeMealsProtein"
+           app:layout_constraintTop_toTopOf="@+id/activeMealsProteinTextView" />
+
+       <TextView
+           android:id="@+id/activeMealsPrice"
+           android:layout_width="wrap_content"
+           android:layout_height="20dp"
+           android:gravity="center_horizontal"
+           android:textSize="10sp"
+           app:layout_constraintBottom_toBottomOf="@+id/activeMealsPriceTextView"
+           app:layout_constraintStart_toEndOf="@+id/activeMealsPriceTextView"
+           app:layout_constraintTop_toTopOf="@+id/activeMealsPriceTextView"
+           app:layout_constraintVertical_bias="1.0" />
+
+       <TextView
+           android:id="@+id/activeMealsCarbs"
+           android:layout_width="wrap_content"
+           android:layout_height="20dp"
+           android:gravity="center_horizontal"
+           android:textSize="10sp"
+           app:layout_constraintBottom_toBottomOf="@+id/activeMealsCarbsTextView"
+           app:layout_constraintStart_toEndOf="@+id/activeMealsCarbsTextView"
+           app:layout_constraintTop_toTopOf="@+id/activeMealsCarbsTextView" />
+
+       <TextView
+           android:id="@+id/activeMealsProtein"
+           android:layout_width="wrap_content"
+           android:layout_height="20dp"
+           android:gravity="center_horizontal"
+           android:textSize="10sp"
+           app:layout_constraintBottom_toBottomOf="@+id/activeMealsProteinTextView"
+           app:layout_constraintStart_toEndOf="@+id/activeMealsProteinTextView"
+           app:layout_constraintTop_toTopOf="@+id/activeMealsProteinTextView" />
+
+       <TextView
+           android:id="@+id/activeMealsFat"
+           android:layout_width="wrap_content"
+           android:layout_height="20dp"
+           android:gravity="center_horizontal"
+           android:textSize="10sp"
+           app:layout_constraintBottom_toBottomOf="@+id/activeMealsFatTextView"
+           app:layout_constraintStart_toEndOf="@+id/activeMealsFatTextView"
+           app:layout_constraintTop_toTopOf="@+id/activeMealsFatTextView" />
+
+       <TextView
+           android:id="@+id/activeMealsCalories"
+           android:layout_width="wrap_content"
+           android:layout_height="20dp"
+           android:gravity="center_horizontal"
+           android:textSize="10sp"
+           app:layout_constraintBottom_toBottomOf="@+id/activeMealsCaloriesTextView"
+           app:layout_constraintStart_toEndOf="@+id/activeMealsCaloriesTextView"
+           app:layout_constraintTop_toTopOf="@+id/activeMealsCaloriesTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
